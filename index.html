@@ -252,6 +252,26 @@ footer .ascii{font-size:14px}
 .facts .ctrl{margin-left:10px}
 @media (max-width:860px){.offclock .grid{grid-template-columns:1fr}}
 
+/* small screens */
+html,body{overflow-x:clip}
+@media (max-width:860px){
+  .story{grid-template-columns:minmax(0,1fr)}
+  .story > *{min-width:0}
+  .receipt{rotate:.8deg}
+  .portrait{margin-top:96px;width:100%}
+}
+@media (max-width:640px){
+  .cloud{display:none}
+  .status{flex-wrap:wrap;gap:2px 10px}
+  .story{padding:24px 20px}
+  .trait{grid-template-columns:44px minmax(0,1fr);gap:14px;padding:22px 20px}
+  .trait svg{width:44px;height:44px}
+  .road{padding-left:54px}
+  .stop .pin{left:-52px}
+  footer .ascii{white-space:normal}
+  .facts li{font-size:20px;padding-left:58px}
+}
+
 /* motion */
 @keyframes drift{from{translate:-12px 0}to{translate:16px -8px}}
 @keyframes slide{to{translate:-50% 0}}
